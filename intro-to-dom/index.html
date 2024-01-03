@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="index.js" defer></script>
-    </head>
-    <body>
-        <h2 id="count"></h2>
-        <button id="increase-button">➕</button>
-        <button id="decrease-button">➖</button>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="list">
+        <div id="listTitle">To Do List</div>
+        <div id="toDoList">
+            <ul id="ulToDo">
+                <li class="listItem">Clean Bathrooms</li>
+                <li class="listItem">Pack Clothes</li>
+                <li class="listItem">Pack Bathroom Stuff</li>
+                <li class="listItem">Check if Doors are Locked</li>
+                <li class="listItem">Clean Kitchen</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="inputField">
+        <input type="text" id="listInput" placeholder="ToDo Item" />
+        <button id="submit">Add Item</button>
+    </div>
+
+</body>
 </html>
