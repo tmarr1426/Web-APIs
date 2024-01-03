@@ -36,11 +36,13 @@ let countText = document.getElementById("count");
 let num = 0;
 
 countText.textContent = num;
-
-incButton.addEventListener("click", () => {
+//e = event
+incButton.addEventListener("click", (e) => {
+    console.log(e);
     num++;
     countText.textContent = num;
 });
+
 decButton.addEventListener("click", () => {
     num--;
     countText.textContent = num;
